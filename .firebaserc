@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "galaxybowlingcenter-b068f": {
+      "hosting": {
+        "bowling": [
+          "galaxybowlingcenter-b068f"
+        ]
+      }
+    },
+    "galaxybowlingc": {
+      "hosting": {
+        "bowling": [
+          "galaxybowlingc"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "galaxybowlingc"
+  }
+}

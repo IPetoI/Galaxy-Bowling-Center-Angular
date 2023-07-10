@@ -1,0 +1,43 @@
+<mat-sidenav-container>
+    <mat-sidenav #oldalsav>
+        <app-menu (oldalsavBezar) = "oldalsavBezaras($event, oldalsav)"></app-menu>
+    </mat-sidenav> 
+    <mat-sidenav-content>
+        <mat-toolbar id="mobilSav">
+            <div>
+                <button (click)="oldalsavKatt(oldalsav)">
+                    <mat-icon style="color: white">menu</mat-icon>
+                </button>
+            </div>
+            <div id="navigacio"></div>
+            <img id="navLogoMobil" src="../../../assets/kepek/logo.png" alt="">
+        </mat-toolbar>
+        <nav>
+            <ul>
+                <li><a [routerLinkActive]="['aktiv']" routerLink="kezdolap" (click)="alapAllapot()">Kezdőlap</a></li>
+                <li><a [routerLinkActive]="['aktiv']" routerLink="galleria" (click)="alapAllapot()">Galléria</a></li>
+                <img id="navLogo" src="../../../assets/kepek/logo.png" alt="">
+                <li> <a [routerLinkActive]="['aktiv']" routerLink="palyafoglalas" (click)="alapAllapot()">Pályafoglalás</a></li>
+                <li><a [routerLinkActive]="['aktiv']" routerLink="rolunk" (click)="alapAllapot()">Rólunk</a></li>
+            </ul>
+            <input type="checkbox" id="csukas">
+            <div id="lenyilo">
+                <br>
+                <a routerLink="bejelentkezes" *ngIf="!bejelentkezetFelhasznalo" (click)="alapAllapot()">Bejelentkezés</a>
+                <a routerLink="profil" *ngIf="bejelentkezetFelhasznalo" (click)="alapAllapot()">Profil</a>
+                <br>
+                <span>-----------------------------------</span>
+                <br>
+                <a routerLink="regisztracio" *ngIf="!bejelentkezetFelhasznalo" (click)="alapAllapot()">Regisztráció</a>
+                <a routerLink="kezdolap" *ngIf="bejelentkezetFelhasznalo" (click)="alapAllapot(); kijelentkezes()">Kijelentkezés</a>
+            </div>
+        </nav>
+        <router-outlet></router-outlet>
+        <footer>
+            <span>&lt;~~~~~~~~~~~~~~~~~~~~~~~&gt;</span>
+            &nbsp; &nbsp; &nbsp;  &copy; 2025 GalaxyBowlingCenter - Pető József &nbsp; &nbsp; &nbsp;  
+            <span>&lt;~~~~~~~~~~~~~~~~~~~~~~~&gt;</span>
+        </footer>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

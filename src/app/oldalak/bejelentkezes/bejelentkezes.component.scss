@@ -1,0 +1,181 @@
+
+$placeholder-szin: rgba(255, 255, 255, 0.803);
+
+@media only screen and (max-width: 600px) {
+    main {
+        height: 1000px !important;
+    }
+    #bejelentkezes {
+        width: 90% !important;
+    }
+    #adatok {
+        margin-left: 50px !important;
+        margin-right: 50px !important;
+    }
+    #bejelentkezesGomb {
+        width: 100% !important;
+        margin-left: -50px !important;
+        margin-right: -50px !important;
+    }
+    img {
+        display: none !important;
+    }
+}
+ 
+@media only screen and (min-width: 600px) and (max-width: 766px) {
+    main {
+        height: 1000px !important;
+    }
+    #bejelentkezes {
+        width: 90% !important;
+    }
+    #adatok {
+        margin-left: 120px !important;
+        margin-right: 120px !important;
+    }
+    #bejelentkezesGomb {
+        width: 100% !important;
+        margin-left: -120px !important;
+        margin-right: -120px !important;
+    }
+    img {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 766px) and (max-width: 991px) {
+    main {
+        height: 1000px !important;
+    }
+    #bejelentkezes {
+        width: 90% !important;
+    }
+    #adatok {
+        margin-left: 170px !important;
+        margin-right: 170px !important;
+    }
+    #bejelentkezesGomb {
+        width: 100% !important;
+        margin-left: -170px !important;
+        margin-right: -170px !important;
+    }
+    img {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+    main {
+        height: 1000px !important;
+    }
+    #bejelentkezes {
+        width: 90% !important;
+    }
+}
+
+main {
+    height:980px;
+    background-color: rgba(0, 0, 0, 0.471);
+    background-image: url(../../../assets/kepek/main.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bejelentkezes {
+    position: absolute;
+    top: 300px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0 50px 50px 0;
+    background-color: black;
+    height: 420px;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+    background: -webkit-linear-gradient(90deg, rgb(255, 15, 239), rgb(173, 0, 208), rgb(0, 125, 235));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 12px;
+}
+
+input {
+    border-radius: 4px;
+}
+
+mat-form-field input {
+    height: 30px;
+    color: white !important;
+}
+
+mat-form-field {
+    margin: -12px;
+}
+
+#sorban {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33.33%, 1fr));
+    align-items: center;
+    justify-content: center;
+}
+
+#adatok {
+    margin: auto;
+    margin-top: 25px;
+}
+
+#hiba {
+    height: 30px;
+    margin-top: -30px;
+}
+
+#bejelentkezesGomb {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    width: 33.33%;
+}
+
+button {
+    height: 50px;
+    width: 180px;
+    margin-bottom: 60px;
+    font-weight: bolder;
+    font-size: 20px;
+    background: -webkit-linear-gradient(180deg,rgb(255, 15, 239),rgb(173, 0, 208));
+    color: white !important;
+}
+
+button:hover {
+    background: -webkit-linear-gradient(180deg, rgb(173, 0, 208),rgb(255, 15, 239));
+}
+
+button:active {
+    transform: translateY(4px);
+}
+
+img {
+    width: 50% !important;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+::placeholder {
+    color: $placeholder-szin;
+    opacity: 1;
+    padding-left: 3px;
+}
+  
+:-ms-input-placeholder {
+    color: $placeholder-szin;
+}
+  
+::-ms-input-placeholder {
+    color: $placeholder-szin;
+}

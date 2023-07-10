@@ -1,0 +1,85 @@
+@media only screen and (max-width: 1400px) {
+    #naptarAlap {
+        display: block !important;
+        top: 500px !important;
+        margin-left: 0 !important;
+    }
+    #naptar, p {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    #NincsSzabadHely {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        position: relative !important;
+        right: 0 !important;
+        top: 560px !important;
+        height: 10px !important;
+    }
+}
+
+#naptarAlap {
+    position: relative;
+    display: inline-block;
+    margin-left: 45px;
+    text-align: center;
+    top: 50px;
+}
+
+#naptar {
+    background: -webkit-linear-gradient(90deg, rgb(255, 15, 239), rgb(173, 0, 208));
+    padding: 30px;
+    padding-top: 5px;
+    width: 300px;
+    height: 330px;
+    border-radius: 25px 25px 0 0;
+    border: 5px solid black;
+  }
+
+p {
+    background-color: rgb(255, 15, 239);
+    border-radius: 0 0 25px 25px;
+    border: 5px solid black;
+    user-select: none;
+    margin: 0;
+    width: 290px;
+}
+
+#NincsSzabadHely {
+    display: block;
+    color: white;
+    width: 300px;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 200px;
+    right: 7%;
+}
+
+::ng-deep .mat-calendar-body-label, ::ng-deep .mat-calendar-table-header,
+    ::ng-deep .mat-calendar-body-cell-content, ::ng-deep .mat-mdc-button {
+    color: white;
+    font-size: 17px;
+}
+
+::ng-deep .mat-calendar-content .mat-calendar-body-cell {
+    width: 40px;
+    height: 40px;
+  }
+
+::ng-deep .mat-mdc-button:not(:disabled) {
+    color: white !important;
+}
+
+::ng-deep .mat-calendar-body-disabled > .mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical) {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+::ng-deep .mat-calendar-arrow {
+    fill: rgba(255, 255, 255, 0.8) !important;
+}
+
+::ng-deep .mat-calendar-body-selected {
+    background-color: #8110b6 !important;
+}
