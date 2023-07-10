@@ -1,5 +1,9 @@
 # Bowling
 
+##Link
+
+The site [https://galaxybowlingc.web.app/kezdolap]([https://pages.github.com/](https://galaxybowlingc.web.app/kezdolap)).
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
 
 ## Development server
